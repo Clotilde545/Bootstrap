@@ -13,17 +13,19 @@
 </head>
 
 <body>
-    <!--Navigation-->
-    <nav>
-        <a href="accueil-tux.html">Accueil</a>
-        <a href="galerie-photos.html">Galerie Photos</a>
-        <a href="description-tux.html">Description des Tux</a>
-        <a href="newsletters.html">Newsletter</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="inscription.html">Inscrivez-vous !</a>
-    </nav>
-
-    <section>
+     <!--Navigation-->
+    <nav aria-label="breadcrumb" class="navbar navbar-expand-lg ">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="accueil-tux.html" >Accueil</a></li>
+                <li class="breadcrumb-item "> <a href="galerie-photos.html" >Galerie Photos</a></li>
+                <li class="breadcrumb-item "><a href="description-tux.html" >Description des Tux</a></li>
+                <li class="breadcrumb-item "> <a href="contacts.html" >Contacts</a></li>
+                <li class="breadcrumb-item "> <a href="newsletters.html" >Newsletter</a></li>
+                <li class="breadcrumb-item "> <a href="inscription.html" >Inscrivez-vous !</a></li>
+            </ol>
+        </nav>
+    <main>
+        <section>
         <img src="./img/image(1).jpg" alt="">
         <img src="./img/image(1).png/" alt="">
         <img src="./img/image(2).png/" alt="">
@@ -59,9 +61,14 @@
         <img src="./img/image(32).png" alt="">
         <img src="./img/image(33).png" alt="">
     </section>
-
-    <div class = "component_photos">hey </div>
-    
+</main>
+    <!--<div class = "component_photos">hey </div>-->
+    <footer>
+            <p>adresse rue de la poste TuxCity</p>
+            <button>Facebook</button>
+            <a href="contacts.html" class="breadcrumb" role="button">Contacts</a>
+        </footer>
+       
 
     <script src="lib/jquery.js"></script>
     <script src="lib/popper.js"></script>

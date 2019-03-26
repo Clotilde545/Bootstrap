@@ -14,18 +14,20 @@
 
 <body>
     <!--Navigation-->
-    <nav>
-        <a href="accueil-tux.html">Accueil</a>
-        <a href="galerie-photos.html">Galerie Photos</a>
-        <a href="description-tux.html">Description des Tux</a>
-        <a href="newsletters.html">Newsletter</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="inscription.html">Inscrivez-vous !</a>
+    <nav aria-label="breadcrumb" class="navbar navbar-expand-lg ">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="accueil-tux.html">Accueil</a></li>
+            <li class="breadcrumb-item "> <a href="galerie-photos.html">Galerie Photos</a></li>
+            <li class="breadcrumb-item "><a href="description-tux.html">Description des Tux</a></li>
+            <li class="breadcrumb-item "> <a href="contacts.html">Contacts</a></li>
+            <li class="breadcrumb-item "> <a href="newsletters.html">Newsletter</a></li>
+            <li class="breadcrumb-item "> <a href="inscription.html">Inscrivez-vous !</a></li>
+        </ol>
     </nav>
-
+<main>
     <section>
         <!--Formulaire d'inscription-->
-        <form action="" method="GET">
+        <form id="inscription" action="" method="GET">
             <p> Inscription</p>
             <label for="prenom">Prénom : </label>
             <input type="text" name="prenom" id="prenom">
@@ -40,6 +42,13 @@
         </form>
 
     </section>
+</main>
+<footer>
+        <p>adresse rue de la poste TuxCity</p>
+        <button>Facebook</button>
+        <a href="contacts.html" class="breadcrumb" role="button">Contacts</a>
+    </footer>
+
     <script src="lib/jquery.js"></script>
     <script src="lib/popper.js"></script>
     <script src="lib/bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>

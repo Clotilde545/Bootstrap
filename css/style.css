@@ -1,3 +1,58 @@
 img {
     width : 100px;
+    display: inline-block;
+	background-color: white;
+	position: relative;
+	margin: 30px 50px;
+	text-align: center;
+	box-shadow: 5px 5px 2px #aaa;
+	padding: 10px;
+}
+img:nth-of-type(even){
+	transform: rotate(10deg);
+}
+
+img:nth-of-type(odd){
+	transform: rotate(-8deg);
+}
+
+img:nth-of-type(even):hover{
+	transform: rotate(0deg);
+	transform: scale(1.3);
+	transition: transform 0.4s;
+}
+
+img:nth-of-type(odd):hover{
+	transform: rotate(0deg);
+	transform: scale(1.3);
+	transition: transform 0.4s;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end; 
+}
+main{
+    min-height: 500px;
+}
+
+.navbar{
+    background: green;
+    position: sticky;
+    top:0;
+}
+h2{
+    color: yellow;
+    display: flex;
+    justify-content: center;
+}
+main{
+    background: grey;
+}
+#contacts, #inscription{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: yellow;
 }

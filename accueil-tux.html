@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="lib/bootstrap/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="lib/bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="lib/open-iconic-master/font/css/open-iconic-bootstrap.min.css">-->
+    <link rel="stylesheet" href="lib/open-iconic-master/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Accueil Tux</title>
 </head>
 
 <body>
+    
     <!--Navigation-->
-    <nav>
-        <a href="accueil-tux.html">Accueil</a>
-        <a href="galerie-photos.html">Galerie Photos</a>
-        <a href="description-tux.html">Description des Tux</a>
-        <a href="newsletters.html">Newsletter</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="inscription.html">Inscrivez-vous !</a>
+    <nav aria-label="breadcrumb" class="navbar navbar-expand-lg ">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="accueil-tux.html" >Accueil</a></li>
+            <li class="breadcrumb-item "> <a href="galerie-photos.html" >Galerie Photos</a></li>
+            <li class="breadcrumb-item "><a href="description-tux.html" >Description des Tux</a></li>
+            <li class="breadcrumb-item "> <a href="contacts.html" >Contacts</a></li>
+            <li class="breadcrumb-item "> <a href="newsletters.html" >Newsletter</a></li>
+            <li class="breadcrumb-item "> <a href="inscription.html" >Inscrivez-vous !</a></li>
+        </ol>
     </nav>
     <!--Accueil et petit mot-->
+    <main>
     <section>
         <h2>Bienvenue sur le site des Tux</h2>
         <article>Vous trouverez sur ce site un accès à la <a href="galerie-photos.html">Galerie Photos des tux</a> ainsi
@@ -30,8 +33,40 @@
 
     </section>
 
+    <!--Article 2 en 1-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#galerie">Galerie</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#descriptif">Descriptif Tux</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade show active" id="galerie">
+            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
+                retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate
+                nisi qui.</p>
+        </div>
+        <div class="tab-pane fade" id="descriptif">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
+                labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
+                beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+                vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+        </div>
+    </div>
+</main> 
+
+    <footer>
+        <p>adresse rue de la poste TuxCity</p>
+        <button>Facebook</button>
+        <a href="contacts.html" class="breadcrumb" role="button">Contacts</a>
+    </footer>
+
     <script src="lib/jquery.js"></script>
-    <script src="lib/popper.js"></script>
+    <!--<script src="lib/popper.js"></script>-->
     <script src="lib/bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
