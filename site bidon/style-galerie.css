@@ -1,0 +1,60 @@
+header{
+	background-color: blue;
+	color: white;
+	text-align: center;
+	height: 50px;
+	width: 1000px;
+	margin: auto;
+	position: relative;
+	font-size: 1em;
+}
+
+body{
+	font-family: Arial, sans-serif;
+}
+
+main{
+	background-color: grey;
+	height: 100%;
+	width: 1000px;
+	margin: auto;
+}
+
+figure{
+	display: inline-block;
+	background-color: white;
+	position: relative;
+	margin: 30px 50px;
+	text-align: center;
+	box-shadow: 5px 5px 2px #aaa;
+	padding: 10px;
+}
+
+footer{
+	background-color: grey;
+	color: black;
+	text-align: center;
+	height: 50px;
+	margin: auto;
+	width: 1000px;
+}
+
+figure:nth-of-type(even){
+	transform: rotate(10deg);
+}
+
+figure:nth-of-type(odd){
+	transform: rotate(-8deg);
+}
+
+figure:nth-of-type(even):hover{
+	transform: rotate(0deg);
+	transform: scale(1.3);
+	transition: transform 0.4s;
+}
+
+figure:nth-of-type(odd):hover{
+	transform: rotate(0deg);
+	transform: scale(1.3);
+	transition: transform 0.4s;
+}
